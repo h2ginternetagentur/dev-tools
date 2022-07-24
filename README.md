@@ -22,6 +22,30 @@ Simple shell scripts that should help the h2g-devs to Create Doc Index, Simplify
 - ***git***, some scripts are helpers for git, and to install the shell scripts on your system, git is also the simplest version
 - ***make***, to install the libraries, `make` is needed to install the makefile `sudo apt install make` `yay -S make` 
 
+### Development
+
+0. Checkout the `main` branch
+
+1. Add your code
+
+- (a) Add a Script:
+
+if you want to add a Script:
+- create your shell script in the `src` directory
+- add the installation routine to the makefile (like the already existing scripts)
+
+
+- or (b) Add an alias
+
+if you want to add a new alias, just add the alias to the [.h2g-alias](src/.h2g-alias)
+
+2. Update the Readme file. Update the Readme file (don't forget the TOC)
+
+3. Update the Changelog
+
+4. Create a Pull Request on [GitHub](https://github.com/h2ginternetagentur/dev-tools/pulls) 
+
+
 ### Install
 
 ```bash
