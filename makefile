@@ -3,9 +3,12 @@ gitDeleteBranches=/usr/local/bin/git-delete-branches
 docIndexBin=/usr/local/bin/doc-index
 docFileIndex=/usr/local/bin/doc-file-index
 gitAddCommit=/usr/local/bin/commit
-helpFile=/usr/local/dev-tools-help
+helpFile=/usr/local/bin/dev-tools-help
 
-install: install-git-push install-git-delete-branches install-doc-index install-doc-file-index h2g-alias dev-tools-help
+install: install-git-push install-git-delete-branches install-doc-index install-doc-file-index h2g-alias dev-tools-help info
+info:
+	echo "Installation successfully executed"
+	dev-tools-help
 install-git-push:
 	cp ./src/git-delete-branches.sh $(gitPush)
 	chown root $(gitPush)

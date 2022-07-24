@@ -10,6 +10,7 @@ Simple shell scripts that should help the h2g-devs to Create Doc Index, Simplify
   - [Install](#install)
   - [Update](#update)
   - [Scripts](#scripts)
+    - [`dev-tools-help`](#dev-tools-help)
     - [`doc-index`](#doc-index)
     - [`doc-file-index`](#doc-file-index)
     - [`git-delete-branches`](#git-delete-branches)
@@ -17,6 +18,7 @@ Simple shell scripts that should help the h2g-devs to Create Doc Index, Simplify
     - [`commit`](#commit)
   - [Aliases](#aliases)
     - [`gh`](#gh)
+
 <!-- /TOC -->
 
 ### Requirements
@@ -59,6 +61,10 @@ cd dev-tool && git pull origin main && sudo make install
 ```
 
 ## Scripts
+
+### `dev-tools-help`
+
+Show information about all this scripts
 
 ### `doc-index`
 
