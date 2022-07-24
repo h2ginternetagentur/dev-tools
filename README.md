@@ -65,7 +65,7 @@ cd dev-tool && git pull origin main && sudo make install
 Fetch all .md files in a Directory and Create a File named 000-TOC.md with the index of all files found in the given directory
 
 Usage:
-```shell
+```bash
 doc-index _doc
 ```
 
@@ -74,7 +74,7 @@ doc-index _doc
 Create an index for a given File, the Doc denn needs to be copy/past into the file.
 
 Usage: 
-```shell
+```bash
 doc-file-index Readme.md
 ```
 
@@ -83,7 +83,7 @@ doc-file-index Readme.md
 Delete all but the Current git branch in a Project (does not execute git prune). 
 
 Usage:
-```shell
+```bash
 git-delete-branches 
 # will maybe often be used to cleanup local repos like:
 git-delete-branches && git-remote-prund origin
@@ -94,7 +94,7 @@ git-delete-branches && git-remote-prund origin
 Instead of `git push orign local/branch` you can just write `push` into your console
 
 Usage:
-```shell
+```bash
 push
 ```
 
@@ -103,7 +103,7 @@ push
 Write just `commit "My Message"` instead of `git add . && git commit -m "My Message"`
 
 Usage:
-```shell
+```bash
 commit "my new commit message #13"
 ```
 
@@ -122,6 +122,7 @@ If this not is working, check if the file ~/.h2g-alias exits `test -e ~/.h2g-ali
 
 Search in the history with grep
 
-```usage 
+Usage:
+```bash 
 gh "rebase"
 ```
