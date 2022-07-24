@@ -92,7 +92,7 @@ Usage:
 ```bash
 git-delete-branches 
 # will maybe often be used to cleanup local repos like:
-git-delete-branches && git-remote-prund origin
+git-delete-branches &&  git remote prune origin
 ```
 
 ### `push`
