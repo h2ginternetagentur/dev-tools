@@ -6,6 +6,7 @@ Simple shell scripts that should help the h2g-devs to Create Doc Index, Simplify
 <!-- TOC -->
 - [dev-tools](#dev-tools)
   - [Requirements](#requirements)
+  - [Development](#development)
   - [Install](#install)
   - [Update](#update)
   - [Scripts](#scripts)
@@ -15,6 +16,7 @@ Simple shell scripts that should help the h2g-devs to Create Doc Index, Simplify
     - [`push`](#push)
     - [`commit`](#commit)
   - [Aliases](#aliases)
+
 <!-- /TOC -->
 
 ### Requirements
@@ -25,24 +27,18 @@ Simple shell scripts that should help the h2g-devs to Create Doc Index, Simplify
 ### Development
 
 0. Checkout the `main` branch
-
 1. Add your code
-
 - (a) Add a Script:
 
-if you want to add a Script:
+if you want to add a Script:  
 - create your shell script in the `src` directory
 - add the installation routine to the makefile (like the already existing scripts)
 
-
-- or (b) Add an alias
-
+- or (b) add an Alias  
 if you want to add a new alias, just add the alias to the [.h2g-alias](src/.h2g-alias)
 
 2. Update the Readme file. Update the Readme file (don't forget the TOC)
-
 3. Update the Changelog
-
 4. Create a Pull Request on [GitHub](https://github.com/h2ginternetagentur/dev-tools/pulls) 
 
 
