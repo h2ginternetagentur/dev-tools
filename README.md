@@ -7,11 +7,15 @@ Simple shell scripts that should help the h2g-devs to Create Doc Index, Simplify
 - [dev-tools](#dev-tools)
   - [Requirements](#requirements)
   - [Install](#install)
+  - [Update](#update)
   - [Scripts](#scripts)
     - [`doc-index`](#doc-index)
     - [`doc-file-index`](#doc-file-index)
     - [`git-delete-branches`](#git-delete-branches)
     - [`push`](#push)
+    - [`commit`](#commit)
+  - [Aliases](#aliases)
+
 <!-- /TOC -->
 
 ### Requirements
@@ -83,3 +87,13 @@ Usage:
 ```shell
 commit "my new commit message #13"
 ```
+
+
+## Aliases
+
+Some Tools ar not scripts but, simple aliases. The aliases are stored in ~/.h2g-alias, to check if the installation had work try `h2g-test-alias`. 
+
+For `bash` and `zsh` its should work out of the box.
+
+***Problems?***  
+If this not is working, check if the file ~/.h2g-alias exits `test -e ~/.h2g-alias && echo $?` if the output is `0` the file exists. If the file exists you need to add `source ~/.h2g-alias` in your `.bash_profile` file. 
