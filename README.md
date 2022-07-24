@@ -16,6 +16,7 @@ Simple shell scripts that should help the h2g-devs to Create Doc Index, Simplify
     - [`push`](#push)
     - [`commit`](#commit)
   - [Aliases](#aliases)
+    - [`gh`](#gh)
 <!-- /TOC -->
 
 ### Requirements
@@ -115,3 +116,12 @@ For `bash` and `zsh` its should work out of the box.
 
 ***Problems?***  
 If this not is working, check if the file ~/.h2g-alias exits `test -e ~/.h2g-alias && echo $?` if the output is `0` the file exists. If the file exists you need to add `source ~/.h2g-alias` in your `.bash_profile` file. 
+
+
+### `gh`
+
+Search in the history with grep
+
+```usage 
+gh "rebase"
+```
