@@ -2,6 +2,7 @@ gitPush=/usr/local/bin/git-push
 gitDeleteBranches=/usr/local/bin/git-delete-branches
 docIndexBin=/usr/local/bin/doc-index
 docFileIndex=/usr/local/bin/doc-file-index
+gitAddCommit=/usr/local/bin/commit
 
 install: install-git-push install-git-delete-branches install-doc-index install-doc-file-index
 install-git-push:
@@ -10,6 +11,11 @@ install-git-push:
 	chgrp root $(gitPush)
 	chmod 677 $(gitPush)
 install-git-delete-branches:
+	cp ./src/git-add-commit.sh $(gitAddCommit)
+	chown root $(gitAddCommit)
+	chgrp root $(gitAddCommit)
+	chmod 677 $(gitAddCommit)
+install-git-commit:
 	cp ./src/git-delete-branches.sh $(gitDeleteBranches)
 	chown root $(gitDeleteBranches)
 	chgrp root $(gitDeleteBranches)

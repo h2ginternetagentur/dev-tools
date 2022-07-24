@@ -5,10 +5,13 @@ Simple shell scripts that should help the h2g-devs to Create Doc Index, Simplify
 
 <!-- TOC -->
 - [dev-tools](#dev-tools)
-    - [Requirements](#requirements)
-    - [Install](#install)
+  - [Requirements](#requirements)
+  - [Install](#install)
+  - [Scripts](#scripts)
     - [`doc-index`](#doc-index)
     - [`doc-file-index`](#doc-file-index)
+    - [`git-delete-branches`](#git-delete-branches)
+    - [`push`](#push)
 <!-- /TOC -->
 
 
@@ -23,6 +26,7 @@ Simple shell scripts that should help the h2g-devs to Create Doc Index, Simplify
  git clone https://github.com/h2ginternetagentur/dev-tools.git && sudo make install
 ```
 
+## Scripts
 
 ### `doc-index`
 
@@ -40,4 +44,33 @@ Create an index for a given File, the Doc denn needs to be copy/past into the fi
 Usage: 
 ```shell
 doc-file-index Readme.md
+```
+
+### `git-delete-branches`
+
+Delete all but the Current git branch in a Project (does not execute git prune). 
+
+Usage:
+```shell
+git-delete-branches 
+# will maybe often be used to cleanup local repos like:
+git-delete-branches && git-remote-prund origin
+```
+
+### `push`
+
+Instead of `git push orign local/branch` you can just write `push` into your console
+
+Usage:
+```shell
+push
+```
+
+### `commit`
+
+Write just `commit "My Message"` instead of `git add . && git commit -m "My Message"`
+
+Usage:
+```shell
+commit "my new commit message #13"
 ```
