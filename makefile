@@ -4,7 +4,7 @@ docIndexBin=/usr/local/bin/doc-index
 docFileIndex=/usr/local/bin/doc-file-index
 gitAddCommit=/usr/local/bin/commit
 
-install: install-git-push install-git-delete-branches install-doc-index install-doc-file-index
+install: install-git-push install-git-delete-branches install-doc-index install-doc-file-index h2g-alias
 install-git-push:
 	cp ./src/git-delete-branches.sh $(gitPush)
 	chown root $(gitPush)
@@ -30,4 +30,6 @@ install-doc-file-index:
 	chown root $(docFileIndex)
 	chgrp root $(docFileIndex)
 	chmod 677 $(docFileIndex)
+h2g-alias:
+	./src/install-alias.sh
 

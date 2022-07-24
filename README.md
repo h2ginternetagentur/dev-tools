@@ -14,7 +14,6 @@ Simple shell scripts that should help the h2g-devs to Create Doc Index, Simplify
     - [`push`](#push)
 <!-- /TOC -->
 
-
 ### Requirements
 
 - ***git***, some scripts are helpers for git, and to install the shell scripts on your system, git is also the simplest version
@@ -23,7 +22,17 @@ Simple shell scripts that should help the h2g-devs to Create Doc Index, Simplify
 ### Install
 
 ```bash
- git clone https://github.com/h2ginternetagentur/dev-tools.git && sudo make install
+ git clone https://github.com/h2ginternetagentur/dev-tools.git && cd dev-tools &&  sudo make install
+```
+
+You also can install only some scripts, take a look in the [makefile](./makefile). e.g. sudo make install install-git-push
+
+### Update
+
+Update if you already have the
+
+```bash
+cd dev-tool && git pull origin main && sudo make install
 ```
 
 ## Scripts
