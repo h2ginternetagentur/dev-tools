@@ -16,7 +16,6 @@ Simple shell scripts that should help the h2g-devs to Create Doc Index, Simplify
     - [`push`](#push)
     - [`commit`](#commit)
   - [Aliases](#aliases)
-
 <!-- /TOC -->
 
 ### Requirements
