@@ -9,9 +9,9 @@ echo "\`doc-file-index [file]\` - Create the ToC (Table of Contents) for a *.md 
 echo ""
 echo "\`git-delete-branches\` - remove all local branches from a git repo (ignores the current branch)"
 echo ""
-echo "\`push\` - git push origin the current branch (event the upstream is not set)"
+echo "\`git-push\` - git push origin the current branch (event the upstream is not set)"
 echo ""
-echo "\`commit [\"message\"]\` - add and commit all files at the same time"
+echo "\`git-commit [\"message\"]\` - add and commit all files at the same time"
 echo ""
 
 echo "ALIASES:"

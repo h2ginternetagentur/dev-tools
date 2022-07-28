@@ -14,8 +14,8 @@ Simple shell scripts that should help the h2g-devs to Create Doc Index, Simplify
     - [`doc-index`](#doc-index)
     - [`doc-file-index`](#doc-file-index)
     - [`git-delete-branches`](#git-delete-branches)
-    - [`push`](#push)
-    - [`commit`](#commit)
+    - [`git-push`](#git-push)
+    - [`git-commit`](#git-commit)
   - [Aliases](#aliases)
     - [`gh`](#gh)
 
@@ -95,22 +95,22 @@ git-delete-branches
 git-delete-branches &&  git remote prune origin
 ```
 
-### `push`
+### `git-push`
 
 Instead of `git push orign local/branch` you can just write `push` into your console
 
 Usage:
 ```bash
-push
+git-push
 ```
 
-### `commit`
+### `git-commit`
 
 Write just `commit "My Message"` instead of `git add . && git commit -m "My Message"`
 
 Usage:
 ```bash
-commit "my new commit message #13"
+git-commit "my new commit message #13"
 ```
 
 
