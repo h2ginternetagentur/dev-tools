@@ -10,12 +10,14 @@ Simple shell scripts that should help the h2g-devs to Create Doc Index, Simplify
   - [Install](#install)
   - [Update](#update)
   - [Scripts](#scripts)
+    - [`dev-tools-help`](#dev-tools-help)
     - [`doc-index`](#doc-index)
     - [`doc-file-index`](#doc-file-index)
     - [`git-delete-branches`](#git-delete-branches)
-    - [`push`](#push)
-    - [`commit`](#commit)
+    - [`git-push`](#git-push)
+    - [`git-commit`](#git-commit)
   - [Aliases](#aliases)
+    - [`gh`](#gh)
 
 <!-- /TOC -->
 
@@ -60,12 +62,16 @@ cd dev-tool && git pull origin main && sudo make install
 
 ## Scripts
 
+### `dev-tools-help`
+
+Show information about all this scripts
+
 ### `doc-index`
 
 Fetch all .md files in a Directory and Create a File named 000-TOC.md with the index of all files found in the given directory
 
 Usage:
-```shell
+```bash
 doc-index _doc
 ```
 
@@ -74,7 +80,7 @@ doc-index _doc
 Create an index for a given File, the Doc denn needs to be copy/past into the file.
 
 Usage: 
-```shell
+```bash
 doc-file-index Readme.md
 ```
 
@@ -83,28 +89,28 @@ doc-file-index Readme.md
 Delete all but the Current git branch in a Project (does not execute git prune). 
 
 Usage:
-```shell
+```bash
 git-delete-branches 
 # will maybe often be used to cleanup local repos like:
-git-delete-branches && git-remote-prund origin
+git-delete-branches &&  git remote prune origin
 ```
 
-### `push`
+### `git-push`
 
 Instead of `git push orign local/branch` you can just write `push` into your console
 
 Usage:
-```shell
-push
+```bash
+git-push
 ```
 
-### `commit`
+### `git-commit`
 
 Write just `commit "My Message"` instead of `git add . && git commit -m "My Message"`
 
 Usage:
-```shell
-commit "my new commit message #13"
+```bash
+git-commit "my new commit message #13"
 ```
 
 
@@ -116,3 +122,13 @@ For `bash` and `zsh` its should work out of the box.
 
 ***Problems?***  
 If this not is working, check if the file ~/.h2g-alias exits `test -e ~/.h2g-alias && echo $?` if the output is `0` the file exists. If the file exists you need to add `source ~/.h2g-alias` in your `.bash_profile` file. 
+
+
+### `gh`
+
+Search in the history with grep
+
+Usage:
+```bash 
+gh "rebase"
+```
