@@ -17,5 +17,5 @@ if grep -Fxq "source .h2g-alias" $userDir/.zshrc; then
   echo "already registered in .zshrc"
 else
   echo "register in .zshrc"
-  echo "source .h2g-alias" >>$userDir/.zshrc
+  echo "source ~/.h2g-alias" >>$userDir/.zshrc
 fi
